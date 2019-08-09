@@ -81,3 +81,6 @@ deploy:
   type: git
   repo: https://github.com/Yihui-Ma/yihui-ma.github.io.git
   branch: master
+
+marked:
+  smartypants: false
