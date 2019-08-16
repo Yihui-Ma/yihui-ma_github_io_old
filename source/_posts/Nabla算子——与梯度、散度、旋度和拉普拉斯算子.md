@@ -5,6 +5,7 @@ tags:
 - Math
 categories:
 - Math
+mathjax: true
 ---
 
 &emsp;&emsp;**Del算子** 或称 **Nabla算子**。符号为$\nabla$，是一个向量微分算子，但本身并非一个向量。
