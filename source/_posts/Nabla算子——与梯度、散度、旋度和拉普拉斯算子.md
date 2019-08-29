@@ -2,9 +2,9 @@
 title: Nabla算子——与梯度、散度、旋度和拉普拉斯算子
 date: 2019-08-08 17:03:33
 tags:
-- Math
+- Maths
 categories:
-- Math
+- Maths
 mathjax: true
 ---
 
