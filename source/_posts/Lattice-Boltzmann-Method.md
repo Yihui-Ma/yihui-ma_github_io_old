@@ -31,3 +31,7 @@ FHP模型图
 
 以上都引用自：
 > Kinetically Consistent Thermal Lattice Boltzmann Models  -by Parthib R. Rao, B.Tech, National Institute of Technology, Calicut, India, 2004
+
+
+## Weighted multiple-relaxation-time (WMRT) model
+&emsp;&emsp;The MRT-LBE approach is based on projection theory: the advection process of the particle distribution function is carried out in the particle velocity space, whereas the collision process is done in moment space, i.e., the distribution function is projected to its velocity moments during the collision precess.（MRT-LBE方法是基于投影理论的：粒子分布函数的传播过程是在粒子速度空间下实现的，其中碰撞过程是在矩空间实现的，如，碰撞过程中的分布函数投影到速度矩上）。
