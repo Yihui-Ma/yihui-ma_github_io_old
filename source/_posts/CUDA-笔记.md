@@ -1,0 +1,35 @@
+---
+title: CUDA 笔记
+date: 2019-09-04 22:24:17
+tags:
+- Computer Science
+categories:
+- Computer Science
+mathjax: true
+---
+
+```
+__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )
+```
+在使用CUDA分配内存函数时，会应用为如下：
+```
+char *a;
+cudaMalloc((void**)&a,size);
+```
+
+通常情况下需要返回cudaMalloc的错误状态为
+```
+char *a;
+checkCudaErrors(cudaMalloc((void**)&a,size));
+```
+
+
+其中，char* a指的是a为一个指向char类型数据的指针，而&a为一个地址，存放的是a的地址，因此&a也为一个指针，这个指针是指向a的指针。由于a自身也为一个指针，因此&a为一个指向指针a的指针，为二重指针。而函数中使用到的第一个变量类型为“void** devPtr”，也就是说这个函数的第一个参数要求为无类型的二重指针，因此当我们将“&a”传入时，我们只满足了传入二重指针的要求，而没有满足传入void类型的要求，因此在&a前加上“(void**)”意味着将它强制转换成“void**”的变量，即转换成无类型的二重指针。
+
+cudaMalloc中使用双指针的原因：（1）所有CUDA API函数都返回错误代码（如果没有错误，则返回cudaSuccess）。所有其他参数通过引用传递。然而，在纯C中不能有引用，这就是为什么必须传递一个变量的地址，希望返回信息被存储。因为返回一个指针，需要传递一个双指针。（2）在C中，数据可以通过值或通过simulated pass-by-reference（即通过指向数据的指针）传递到函数。按值是一种单向方法，通过指针允许在函数及其调用环境之间的双向数据流。当数据项通过函数参数列表传递给函数时，函数期望修改原始数据项，以使修改的值出现在调用环境中，正确的C方法是传递数据项通过指针。在C中，当我们通过指针时，我们获取需要修改的项的地址，创建一个指针（在这种情况下可能是一个指针），并将地址传递给函数。这允许函数在调用环境中修改原始项目（通过指针）。通常malloc返回一个指针，我们可以在调用环境中使用赋值来将这个返回的值赋给所需的指针。在cudaMalloc的情况下，CUDA设计者选择使用返回值携带错误状态而不是指针。因此，调用环境中的指针的设置必须通过参考(即通过指针)传递给函数的参数之一发生。由于它是一个我们想要设置的指针值，我们必须取指针的地址(创建一个指针的指针)，并将该地址传递给cudaMalloc函数。
+
+以上参考于：
+> http://www.voidcn.com/article/p-hmzqzios-dp.html
+https://codeday.me/bug/20171113/95047.html
+https://codeday.me/bug/20171029/90419.html
+
