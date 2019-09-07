@@ -78,7 +78,7 @@ checkCudaErrors(cudaMemcpy(Father_dev, Father_host,cudaMemcpyHostToDevice));
 checkCudaErrors(cudaMemcpy(&(Father_dev->son1), &son1_dev,sizeof(son1_dev),cudaMemcpyHostToDevice));
 checkCudaErrors(cudaMemcpy(&(Father_dev->son2), &son2_dev,sizeof(son2_dev),cudaMemcpyHostToDevice));
 ```
-这一步的操作为将son1_dev指向的地址赋值给Father_dev->son1指向的地址，使得Father_dev->son1指向对应的GPU（device）上的地址，至于为什么这一步依然是使用“cudaMemcpyHostToDevice”，原因在于g_dev自身是在CPU上生成的临时变量，虽然它指向的是GPU上的地址，而Father_dev->son1是在GPU上生成的变量（前面提到的因为"cudaMalloc((void**)&Father_dev, sizeof(A))）;"前面提到Father_dev和它的成员指针变量都是指向GPU的，相当于将CPU上的指针对应的地址值（在GPU上）赋值给在GPU上的指向GPU上内存空间的指针(拷贝的数据大小为指针指向地址的大小)，因此此时为“cudaMemcpyHostToDevice”。因此，此时，Father_dev自身在CPU上（Father_dev其实只是个符号，在具体的计算中只和其成员变量有关），其成员变量所指向的地址处于GPU上，所指向的地址的内容也已从CPU上复制赋值而来。到这里，深度拷贝完成。
+这一步的操作为将son1_dev指向的地址赋值给Father_dev->son1指向的地址，使得Father_dev->son1指向对应的GPU（device）上的地址，至于为什么这一步依然是使用“cudaMemcpyHostToDevice”，原因在于g_dev自身是在CPU上生成的临时变量，虽然它指向的是GPU上的地址，而Father_dev->son1是在GPU上生成的变量（前面提到的因为"cudaMalloc((void**)&Father_dev, sizeof(A))）;"前面提到Father_dev和它的成员指针变量都是指向GPU的，相当于将CPU上的指针对应的地址值（在GPU上）赋值给在GPU上的指向GPU上内存空间的指针(拷贝的数据大小为指针指向地址的大小，注意sizeof(指针)的值为指针的首地址大小，而确实只需要传递首地址)，因此此时为“cudaMemcpyHostToDevice”。因此，此时，Father_dev自身在CPU上（Father_dev其实只是个符号，在具体的计算中只和其成员变量有关），其成员变量所指向的地址处于GPU上，所指向的地址的内容也已从CPU上复制赋值而来。到这里，深度拷贝完成。
 还可以换一种角度来理解cudaMemcpy函数。
 ```
 checkCudaErrors(cudaMemcpy(son1_dev, Father->son1,sizeof(B),cudaMemcpyHostToDevice));
@@ -92,3 +92,5 @@ checkCudaErrors(cudaMemcpy(&(Father_dev->son2), &son2_dev,sizeof(son2_dev),cudaM
 在这一步中，是进行了指针所指向地址的赋值（相当于对指针的指针进行了一次解引用），&(Father_dev->son1)是取Father_dev->son1这一指针的地址，相当于取了指向Father_dev->son1这一指针的指针，&son1_dev的含义同理可得，在cudaMemcpy中对前两个传入的参数进行一次解引用，则是对两个指针所指向的地址作处理，因此为将son1_dev所指向的地址赋值给Father_dev->son1所指向的地址。
 &emsp;&emsp;综上，对于自定义类类型变量及其成员变量从CPU到GPU上的进行深度拷贝的操作，为先将该变量在GPU上分配空间（此时其成员变量位于GPU上，所指向的也在GPU上，可以根据动态内存空间分配得出），然后
 在CPU上声明临时指针变量（作为成员变量在CPU和GPU上的沟通桥梁），这些临时变量所指向的空间为GPU，然后将CPU上对应的成员变量值赋值给这些临时变量，最后再使得该变量的成员变量（位于GPU上）指向这些临时变量指向的地址（地址位于GPU上）。进行这些深度拷贝的原因主要在于，无法直接将位于CPU上的变量的成员变量值直接赋值给位于GPU上的变量的成员变量值，需要通过中间的临时变量的指针来作为沟通的桥梁。
+
+
