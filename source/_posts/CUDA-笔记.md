@@ -38,5 +38,57 @@ cudaMalloc中使用双指针的原因：（1）所有CUDA API函数都返回错�
 https://codeday.me/bug/20171113/95047.html
 https://codeday.me/bug/20171029/90419.html
 
-## CUDA的深度拷贝（个人理解）
-对于一个C++的自定义类型变量，且该变量包含其他类型的成员变量，在进行CUDA的变量拷贝时。
+## CUDA的内存分配与深度拷贝（个人理解）
+&emsp;&emsp;CUDA的深度拷贝时为了将CPU（host）上的自定义类型变量搬运到GPU（device）上从而进行这些量的并行计算。对于一个C++的自定义类类型变量，且该变量包含其他类型的成员变量，在进行CUDA的变量拷贝时，首先进行该变量的内存分配。
+假设该变量为\*Father（类型为A），其具有成员变量\*son1（类型为B）和\*son2（类型为B），这些量都存在host上；假设在device上对应的变量为\*Father_dev。先使用"cudaMalloc(void ** devPtr, size_t size)"为\*Father_dev在GPU上开辟内存空间，具体为
+```
+cudaMalloc((void**)&Father_dev, sizeof(A));
+```
+这个函数相当于在GPU上找一片大小为sizeof(A)的空间，然后将这个空间的首地址给函数中的第一个参数。那么这个参数到底是什么呢？在Father_dev取地址并强制转换为无类型的二重指针后，代入到cudaMalloc函数中，Father_dev指向的地址为GPU上分配空间的首地址，其成员变量则位于GPU分配空间的偏移地址上（注意，成员变量都在GPU上）。然后接下来进行其成员变量的深度拷贝。首先使用
+```
+template<class T>
+static __inline__ __host__ cudaError_t cudaMalloc(
+  T      **devPtr,
+  size_t   size
+)
+{
+  return ::cudaMalloc((void**)(void*)devPtr, size);
+}
+```
+对其成员变量son1和son2进行在device上的内存分配，具体操作为
+```
+B *son1_dev;
+B *son2_dev;
+checkCudaErrors(cudaMalloc(&son1_dev)，sizeof(B));
+checkCudaErrors(cudaMalloc(&son2_dev)，sizeof(B));
+```
+使用这两个临时变量son1_dev，son2_dev的原因在于有利于进行从Father到Father_dev的每个成员变量得值拷贝和对应内存分配，因为这样只需要在临时变量上分配GPU上的内存空间，然后将Father_dev中的每个成员变量指向这几个临时变量所处于的地址，具体操作如下
+```
+checkCudaErrors(cudaMemcpy(son1_dev, Father->son1,cudaMemcpyHostToDevice));
+checkCudaErrors(cudaMemcpy(son2_dev, Father->son2,cudaMemcpyHostToDevice));
+```
+这一步的操作为将host上的\*Father的成员变量（\*son1、\*son2）所指向地址的内容赋值给son1_dev和son2_dev所指向地址的内容。这一步为从host拷贝至device。下一步的操作为
+
+```
+checkCudaErrors(cudaMemcpy(Father_dev, Father_host,cudaMemcpyHostToDevice));
+```
+这一步的目的是为了进行下一步的将临时变量赋值给device上的变量，先将Father整个进行赋值（相当于先进行浅拷贝），这里为将Father所指向地址的内容赋值给Father_dev所指向的地址的内容，因为Father中可能包含一些非指针的非动态分配内存的变量（这里说的可能不太对）。这一步为从host拷贝至device。下一步的操作为
+
+```
+checkCudaErrors(cudaMemcpy(&(Father_dev->son1), &son1_dev,cudaMemcpyHostToDevice));
+checkCudaErrors(cudaMemcpy(&(Father_dev->son2), &son2_dev,cudaMemcpyHostToDevice));
+```
+这一步的操作为将son1_dev指向的地址赋值给Father_dev->son1指向的地址，使得Father_dev->son1指向对应的GPU（device）上的地址，至于为什么这一步依然是使用“cudaMemcpyHostToDevice”，原因在于g_dev自身是在CPU上生成的临时变量，虽然它指向的是GPU上的地址，而Father_dev->son1是在GPU上生成的变量（前面提到的因为"cudaMalloc((void**)&Father_dev, sizeof(A))）;"前面提到Father_dev和它的成员指针变量都是指向GPU的，相当于将CPU上的指针对应的地址值（在GPU上）赋值给在GPU上的指向GPU上内存空间的指针，因此此时为“cudaMemcpyHostToDevice”。因此，此时，Father_dev自身在CPU上（Father_dev其实只是个符号，在具体的计算中只和其成员变量有关），其成员变量所指向的地址处于GPU上，所指向的地址的内容也已从CPU上复制赋值而来。到这里，深度拷贝完成。
+还可以换一种角度来理解cudaMemcpy函数。
+```
+checkCudaErrors(cudaMemcpy(son1_dev, Father->son1,cudaMemcpyHostToDevice));
+checkCudaErrors(cudaMemcpy(son2_dev, Father->son2,cudaMemcpyHostToDevice));
+```
+在这一步中，是进行了指针所指向地址的内容的赋值（相当于对指针进行了一次解引用），该函数的声明为“cudaMemcpy(void *dst, const void *src, size_t count, enum cudaMemcpyKind kind)”。
+```
+checkCudaErrors(cudaMemcpy(&(Father_dev->son1), &son1_dev,cudaMemcpyHostToDevice));
+checkCudaErrors(cudaMemcpy(&(Father_dev->son2), &son2_dev,cudaMemcpyHostToDevice));
+```
+在这一步中，是进行了指针所指向地址的赋值（相当于对指针的指针进行了一次解引用），&(Father_dev->son1)是取Father_dev->son1这一指针的地址，相当于取了指向Father_dev->son1这一指针的指针，&son1_dev的含义同理可得，在cudaMemcpy中对前两个传入的参数进行一次解引用，则是对两个指针所指向的地址作处理，因此为将son1_dev所指向的地址赋值给Father_dev->son1所指向的地址。
+&emsp;&emsp;综上，对于自定义类类型变量及其成员变量从CPU到GPU上的进行深度拷贝的操作，为先将该变量在GPU上分配空间（此时其成员变量位于GPU上，所指向的也在GPU上，可以根据动态内存空间分配得出），然后
+在CPU上声明临时指针变量（作为成员变量在CPU和GPU上的沟通桥梁），这些临时变量所指向的空间为GPU，然后将CPU上对应的成员变量值赋值给这些临时变量，最后再使得该变量的成员变量（位于GPU上）指向这些临时变量指向的地址（地址位于GPU上）。进行这些深度拷贝的原因主要在于，无法直接将位于CPU上的变量的成员变量值直接赋值给位于GPU上的变量的成员变量值，需要通过中间的临时变量的指针来作为沟通的桥梁。
