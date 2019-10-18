@@ -62,7 +62,7 @@ B *son2_dev;
 checkCudaErrors(cudaMalloc(&son1_dev)，sizeof(B));
 checkCudaErrors(cudaMalloc(&son2_dev)，sizeof(B));
 ```
-使用这两个临时变量son1_dev，son2_dev的原因在于有利于进行从Father到Father_dev的每个成员变量得值拷贝和对应内存分配，因为这样只需要在临时变量上分配GPU上的内存空间，然后将Father_dev中的每个成员变量指向这几个临时变量所处于的地址，具体操作如下
+这时这两个临时变量处于CPU上，而它们两个指向GPU上的地址。使用这两个临时变量son1_dev，son2_dev的原因在于有利于进行从Father到Father_dev的每个成员变量得值拷贝和对应内存分配，因为这样只需要在临时变量上分配GPU上的内存空间，然后将Father_dev中的每个成员变量指向这几个临时变量所处于的地址，具体操作如下
 ```
 checkCudaErrors(cudaMemcpy(son1_dev, Father->son1,sizeof(B),cudaMemcpyHostToDevice));
 checkCudaErrors(cudaMemcpy(son2_dev, Father->son2,sizeof(B),cudaMemcpyHostToDevice));
