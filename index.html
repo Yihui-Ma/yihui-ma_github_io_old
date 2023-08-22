@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="generator" content="Hexo 3.9.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.3.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.3.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.3.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    save_scroll: false,
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="YIHUI">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="YIHUI">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="YIHUI">
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>YIHUI</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  <div class="container sidebar-position-left">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">YIHUI</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+  </ul>
+
+    
+
+</nav>
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content page-home">
+            
+  <section id="posts" class="posts-expand">
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/08/22/test20230822/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2023/08/22/test20230822/" class="post-title-link" itemprop="url">test20230822</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2023-08-22 19:44:50 / 修改时间：19:54:49" itemprop="dateCreated datePublished" datetime="2023-08-22T19:44:50+08:00">2023-08-22</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/测试/" itemprop="url" rel="index"><span itemprop="name">测试</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <p>blog 复活！<br>时隔4年的七夕！</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/16/test-global/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/10/16/test-global/" class="post-title-link" itemprop="url">test_global</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-16 22:37:40" itemprop="dateCreated datePublished" datetime="2019-10-16T22:37:40+08:00">2019-10-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/测试/" itemprop="url" rel="index"><span itemprop="name">测试</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <p>191016</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/07/C++-笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/09/07/C++-笔记/" class="post-title-link" itemprop="url">C++ 笔记</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 22:25:26" itemprop="dateCreated datePublished" datetime="2019-09-07T22:25:26+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/" itemprop="url" rel="index"><span itemprop="name">Computer Science</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h2 id="define-宏定义"><a href="#define-宏定义" class="headerlink" title="#define 宏定义"></a>#define 宏定义</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define value A B</span><br></pre></td></tr></table></figure>
+
+<p>则将value定义为A和B，value既等于A，又等于B。</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/04/CUDA-笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/09/04/CUDA-笔记/" class="post-title-link" itemprop="url">CUDA 笔记</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-04 22:24:17" itemprop="dateCreated datePublished" datetime="2019-09-04T22:24:17+08:00">2019-09-04</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/" itemprop="url" rel="index"><span itemprop="name">Computer Science</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h2 id="CUDA的内存分配（摘自网络）"><a href="#CUDA的内存分配（摘自网络）" class="headerlink" title="CUDA的内存分配（摘自网络）"></a>CUDA的内存分配（摘自网络）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">__host__ ​ __device__ ​cudaError_t cudaMalloc ( void** devPtr, size_t size )</span><br></pre></td></tr></table></figure>
+
+<p>在使用CUDA分配内存函数时，会应用为如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *a;</span><br><span class="line">cudaMalloc((void**)&amp;a,size);</span><br></pre></td></tr></table></figure>
+
+<p>通常情况下需要返回cudaMalloc的错误状态为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *a;</span><br><span class="line">checkCudaErrors(cudaMalloc((void**)&amp;a,size));</span><br></pre></td></tr></table></figure>
+
+<p>code中的cudaMalloc()是用来分配内存的，这个函数调用的行为非常类似于标准的C函数malloc()，但该函数的作用是告诉CUDA运行时在设备上分配内存。第一个参数是一个指针，指向用于保存新分配内存地址的变量，第二个参数是分配内存的大小。除了分配内存的指针不是作为函数的返回值外，这个函数的行为与malloc()是相同的，并且返回类型为void*。</p>
+<p>其中，char* a指的是a为一个指向char类型数据的指针，而&amp;a为一个地址，存放的是a的地址，因此&amp;a也为一个指针，这个指针是指向a的指针。由于a自身也为一个指针，因此&amp;a为一个指向指针a的指针，为二重指针。而函数中使用到的第一个变量类型为“void** devPtr”，也就是说这个函数的第一个参数要求为无类型的二重指针，因此当我们将“&amp;a”传入时，我们只满足了传入二重指针的要求，而没有满足传入void类型的要求，因此在&amp;a前加上“(void<strong>)”意味着将它强制转换成“void</strong>”的变量，即转换成无类型的二重指针。</p>
+<p>cudaMalloc中使用双指针的原因：（1）所有CUDA API函数都返回错误代码（如果没有错误，则返回cudaSuccess）。所有其他参数通过引用传递。然而，在纯C中不能有引用，这就是为什么必须传递一个变量的地址，希望返回信息被存储。因为返回一个指针，需要传递一个双指针。（2）在C中，数据可以通过值或通过simulated pass-by-reference（即通过指向数据的指针）传递到函数。按值是一种单向方法，通过指针允许在函数及其调用环境之间的双向数据流。当数据项通过函数参数列表传递给函数时，函数期望修改原始数据项，以使修改的值出现在调用环境中，正确的C方法是传递数据项通过指针。在C中，当我们通过指针时，我们获取需要修改的项的地址，创建一个指针（在这种情况下可能是一个指针），并将地址传递给函数。这允许函数在调用环境中修改原始项目（通过指针）。通常malloc返回一个指针，我们可以在调用环境中使用赋值来将这个返回的值赋给所需的指针。在cudaMalloc的情况下，CUDA设计者选择使用返回值携带错误状态而不是指针。因此，调用环境中的指针的设置必须通过参考(即通过指针)传递给函数的参数之一发生。由于它是一个我们想要设置的指针值，我们必须取指针的地址(创建一个指针的指针)，并将该地址传递给cudaMalloc函数。</p>
+<p>以上参考于：</p>
+<blockquote>
+<p>本文为CSDN博主「LinJM-机器视觉」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/linj_m/article/details/41345263" target="_blank" rel="noopener">https://blog.csdn.net/linj_m/article/details/41345263</a> </p>
+</blockquote>
+<blockquote>
+<p><a href="http://www.voidcn.com/article/p-hmzqzios-dp.html" target="_blank" rel="noopener">http://www.voidcn.com/article/p-hmzqzios-dp.html</a><br><a href="https://codeday.me/bug/20171113/95047.html" target="_blank" rel="noopener">https://codeday.me/bug/20171113/95047.html</a><br><a href="https://codeday.me/bug/20171029/90419.html" target="_blank" rel="noopener">https://codeday.me/bug/20171029/90419.html</a></p>
+</blockquote>
+<h2 id="CUDA的内存分配与深度拷贝（个人理解）"><a href="#CUDA的内存分配与深度拷贝（个人理解）" class="headerlink" title="CUDA的内存分配与深度拷贝（个人理解）"></a>CUDA的内存分配与深度拷贝（个人理解）</h2><p>&emsp;&emsp;CUDA的深度拷贝时为了将CPU（host）上的自定义类型变量搬运到GPU（device）上从而进行这些量的并行计算。对于一个C++的自定义类类型变量，且该变量包含其他类型的成员变量，在进行CUDA的变量拷贝时，首先进行该变量的内存分配。<br>假设该变量为*Father（类型为A），其具有成员变量*son1（类型为B）和*son2（类型为B），这些量都存在host上；假设在device上对应的变量为*Father_dev。先使用&quot;cudaMalloc(void ** devPtr, size_t size)&quot;为*Father_dev在GPU上开辟内存空间，具体为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cudaMalloc((void**)&amp;Father_dev, sizeof(A));</span><br></pre></td></tr></table></figure>
+
+<p>这个函数相当于在GPU上找一片大小为sizeof(A)的空间，然后将这个空间的首地址给函数中的第一个参数。那么这个参数到底是什么呢？在Father_dev取地址并强制转换为无类型的二重指针后，代入到cudaMalloc函数中，Father_dev指向的地址为GPU上分配空间的首地址，其成员变量则位于GPU分配空间的偏移地址上（注意，成员变量都在GPU上）。然后接下来进行其成员变量的深度拷贝。首先使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">template&lt;class T&gt;</span><br><span class="line">static __inline__ __host__ cudaError_t cudaMalloc(</span><br><span class="line">  T      **devPtr,</span><br><span class="line">  size_t   size</span><br><span class="line">)</span><br><span class="line">&#123;</span><br><span class="line">  return ::cudaMalloc((void**)(void*)devPtr, size);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对其成员变量son1和son2进行在device上的内存分配，具体操作为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">B *son1_dev;</span><br><span class="line">B *son2_dev;</span><br><span class="line">checkCudaErrors(cudaMalloc(&amp;son1_dev)，sizeof(B));</span><br><span class="line">checkCudaErrors(cudaMalloc(&amp;son2_dev)，sizeof(B));</span><br></pre></td></tr></table></figure>
+
+<p>这时这两个临时变量处于CPU上，而它们两个指向GPU上的地址。使用这两个临时变量son1_dev，son2_dev的原因在于有利于进行从Father到Father_dev的每个成员变量得值拷贝和对应内存分配，因为这样只需要在临时变量上分配GPU上的内存空间，然后将Father_dev中的每个成员变量指向这几个临时变量所处于的地址，具体操作如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">checkCudaErrors(cudaMemcpy(son1_dev, Father-&gt;son1,sizeof(B),cudaMemcpyHostToDevice));</span><br><span class="line">checkCudaErrors(cudaMemcpy(son2_dev, Father-&gt;son2,sizeof(B),cudaMemcpyHostToDevice));</span><br></pre></td></tr></table></figure>
+
+<p>这一步的操作为将host上的*Father的成员变量（*son1、*son2）所指向地址的内容赋值给son1_dev和son2_dev所指向地址的内容（拷贝的数据大小为每个成员指针指向的内容的数据类型大小）。这一步为从host拷贝至device。下一步的操作为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">checkCudaErrors(cudaMemcpy(Father_dev, Father_host,cudaMemcpyHostToDevice));</span><br></pre></td></tr></table></figure>
+
+<p>这一步的目的是为了进行下一步的将临时变量赋值给device上的变量，先将Father整个进行赋值（相当于先进行浅拷贝），这里为将Father所指向地址的内容赋值给Father_dev所指向的地址的内容，因为Father中可能包含一些非指针的非动态分配内存的变量（这里说的可能不太对）。这一步为从host拷贝至device。下一步的操作为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">checkCudaErrors(cudaMemcpy(&amp;(Father_dev-&gt;son1), &amp;son1_dev,sizeof(son1_dev),cudaMemcpyHostToDevice));</span><br><span class="line">checkCudaErrors(cudaMemcpy(&amp;(Father_dev-&gt;son2), &amp;son2_dev,sizeof(son2_dev),cudaMemcpyHostToDevice));</span><br></pre></td></tr></table></figure>
+
+<p>这一步的操作为将son1_dev指向的地址赋值给Father_dev-&gt;son1指向的地址，使得Father_dev-&gt;son1指向对应的GPU（device）上的地址，至于为什么这一步依然是使用“cudaMemcpyHostToDevice”，原因在于g_dev自身是在CPU上生成的临时变量，虽然它指向的是GPU上的地址，而Father_dev-&gt;son1是在GPU上生成的变量（前面提到的因为&quot;cudaMalloc((void**)&amp;Father_dev, sizeof(A))）;&quot;前面提到Father_dev和它的成员指针变量都是指向GPU的，相当于将CPU上的指针对应的地址值（在GPU上）赋值给在GPU上的指向GPU上内存空间的指针(拷贝的数据大小为指针指向地址的大小，注意sizeof(指针)的值为指针的首地址大小，而确实只需要传递首地址)，因此此时为“cudaMemcpyHostToDevice”。因此，此时，Father_dev自身在CPU上（Father_dev其实只是个符号，在具体的计算中只和其成员变量有关），其成员变量所指向的地址处于GPU上，所指向的地址的内容也已从CPU上复制赋值而来。到这里，深度拷贝完成。<br>还可以换一种角度来理解cudaMemcpy函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">checkCudaErrors(cudaMemcpy(son1_dev, Father-&gt;son1,sizeof(B),cudaMemcpyHostToDevice));</span><br><span class="line">checkCudaErrors(cudaMemcpy(son2_dev, Father-&gt;son2,sizeof(B),cudaMemcpyHostToDevice));</span><br></pre></td></tr></table></figure>
+
+<p>在这一步中，是进行了指针所指向地址的内容的赋值（相当于对指针进行了一次解引用），该函数的声明为“cudaMemcpy(void *dst, const void *src, size_t count, enum cudaMemcpyKind kind)”。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">checkCudaErrors(cudaMemcpy(&amp;(Father_dev-&gt;son1), &amp;son1_dev,sizeof(son1_dev),cudaMemcpyHostToDevice));</span><br><span class="line">checkCudaErrors(cudaMemcpy(&amp;(Father_dev-&gt;son2), &amp;son2_dev,sizeof(son2_dev),cudaMemcpyHostToDevice));</span><br></pre></td></tr></table></figure>
+
+<p>在这一步中，是进行了指针所指向地址的赋值（相当于对指针的指针进行了一次解引用），&amp;(Father_dev-&gt;son1)是取Father_dev-&gt;son1这一指针的地址，相当于取了指向Father_dev-&gt;son1这一指针的指针，&amp;son1_dev的含义同理可得，在cudaMemcpy中对前两个传入的参数进行一次解引用，则是对两个指针所指向的地址作处理，因此为将son1_dev所指向的地址赋值给Father_dev-&gt;son1所指向的地址。<br>&emsp;&emsp;综上，对于自定义类类型变量及其成员变量从CPU到GPU上的进行深度拷贝的操作，为先将该变量在GPU上分配空间（此时其成员变量位于GPU上，所指向的也在GPU上，可以根据动态内存空间分配得出），然后<br>在CPU上声明临时指针变量（作为成员变量在CPU和GPU上的沟通桥梁），这些临时变量所指向的空间为GPU，然后将CPU上对应的成员变量值赋值给这些临时变量，最后再使得该变量的成员变量（位于GPU上）指向这些临时变量指向的地址（地址位于GPU上）。进行这些深度拷贝的原因主要在于，无法直接将位于CPU上的变量的成员变量值直接赋值给位于GPU上的变量的成员变量值，需要通过中间的临时变量的指针来作为沟通的桥梁。</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/01/深入理解计算机系统-笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/09/01/深入理解计算机系统-笔记/" class="post-title-link" itemprop="url">深入理解计算机系统 笔记</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-01 22:45:49" itemprop="dateCreated datePublished" datetime="2019-09-01T22:45:49+08:00">2019-09-01</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/" itemprop="url" rel="index"><span itemprop="name">Computer Science</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h2 id="程序被其他程序翻译成不同的格式"><a href="#程序被其他程序翻译成不同的格式" class="headerlink" title="程序被其他程序翻译成不同的格式"></a>程序被其他程序翻译成不同的格式</h2><p>&emsp;&emsp;在Unix系统上，从源文件到目标文件的转化是由编译器驱动程序完成的<br>&emsp;&emsp; <em>linux&gt; gcc -o hello hello.c</em><br>在这里，GCC编译器驱动程序读取源程序文件hello.c，并把它翻译成一个可执行目标文件hello。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;hello, world\n&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp; <strong>预处理阶段。</strong> 预处理器(cpp)根据以字符#开头的命令，修改原始的C程序。比如hello.c中第1行的#include&lt;stdio.h&gt;命令告诉预处理器读取系统头文件stdio.h的内容，并把它直接插入程序文本中。结果就得到了另一个C程序，通常是以.i作为文件扩展名。<br>&emsp;&emsp; <strong>编译阶段。</strong> 编译器（ccl）将文本文件hello.i翻译成文本文件hello.s，它包含一个汇编语言程序。该程序包含函数main的定义。<br>&emsp;&emsp; <strong>汇编阶段。</strong> 接下来，汇编器（as）将hello.s翻译成机器语言指令，把这些指令打包成一种叫做可重定位目标程序（relocatable object program）的格式，并将结果保存在目标文件hello.o中。hello.o文件是一个二进制文件，它包含的17个字节是函数main的指令编码。如果我们在文本编辑器中打开hello.o文件，将看到一堆乱码。<br>&emsp;&emsp; <strong>链接阶段。</strong> hello程序调用了printf函数，它是每个C编译器都提供的标准C库中的一个函数。printf函数存在于一个名为printf.o的单独的预编译好了的目标文件中，而这个文件必须以某种方式合并到hello.o程序中。连接器（ld）就负责处理这种合并。结果就得到hello文件，它是一个可执行目标文件（或者简称为可执行文件），可以被加载到内存中，由系统执行。</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/29/线性关系的一个结论/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/08/29/线性关系的一个结论/" class="post-title-link" itemprop="url">线性关系的一个结论</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-29 22:44:55" itemprop="dateCreated datePublished" datetime="2019-08-29T22:44:55+08:00">2019-08-29</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Maths/" itemprop="url" rel="index"><span itemprop="name">Maths</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <p>&emsp;&emsp;如果$f(\alpha)=(1-\alpha)m_l+\alpha m_h,(m_l&lt; m_h)$，其中$m_l$，$m_h$为常数，$\alpha \in (0,1)$，则$f(\alpha) \in (m_l,m_h)$，且$f(\alpha)$与$alpha$为线性关系，其斜率为$\displaystyle k=\frac{f(\alpha_h)-f(\alpha_l)}{\alpha_h-\alpha_l}=m_h-m_l$，其中$\alpha_h=1$，$\alpha_l=0$，$f(\alpha_h)=m_h$，$f(\alpha_l)=m_l$</p>
+<p>&emsp;&emsp;其实不用推导，这是显而易见的，但是我在看论文的时候居然在这里卡了很久，还绕着推导了一遍。</p>
+<p>由$f(\alpha)=(1-\alpha)m_l+\alpha m_h,(m_l&lt; m_h)$<br>得$f(\alpha)-m_l=(1-\alpha)m_l+\alpha m_h-m_l=\alpha(m_h-m_l)$<br>得$\displaystyle\frac{f(\alpha)-m_l}{m_h-m_l}=\alpha$<br>令$\displaystyle\frac{f(\alpha_1)-m_l}{m_h-m_l}=\alpha_1$,$\displaystyle\frac{f(\alpha_2)-m_l}{m_h-m_l}=\alpha_2$<br>则$\displaystyle\frac{f(\alpha_2)-f(\alpha_1)}{m_h-m_l}=\alpha_2-\alpha_1$</p>
+<p>则$\displaystyle\frac{f(\alpha_2)-f(\alpha_1)}{\alpha_2-\alpha_1}=m_h-m_l$，即为该线性关系中的斜率$k$。</p>
+<p>由$f(\alpha)=(1-\alpha)m_l+\alpha m_h,(m_l&lt; m_h)$，得<br>$f(\alpha)=m_l+\alpha(m_h-m_l)$，代入$\displaystyle m_h-m_l=\frac{f(\alpha_2)-f(\alpha_1)}{\alpha_2-\alpha_1}$，可得$f(\alpha)$与$\alpha$成线性关系，且满足斜率$\displaystyle k=\frac{f(\alpha_h)-f(\alpha_l)}{\alpha_h-\alpha_l}=m_h-m_l$</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/25/Fundamentals-of-Computer-Graphics-笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/08/25/Fundamentals-of-Computer-Graphics-笔记/" class="post-title-link" itemprop="url">Fundamentals of Computer Graphics 笔记</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-25 16:58:56" itemprop="dateCreated datePublished" datetime="2019-08-25T16:58:56+08:00">2019-08-25</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Graphics/" itemprop="url" rel="index"><span itemprop="name">Computer Graphics</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <p>第四版教材个人笔记。</p>
+<p>图形学主要包括Modeling（建模），Rendering（渲染）、Animation（动画），还包括User interaction（用户交互)、Virtual reality（虚拟现实）、Visualization（可视化）、Image processing（图像处理）、3D scanning（3D扫描）、Compoutational photography（计算摄影）。</p>
+<p>使代码处理更快的方法：</p>
+<ol>
+<li>尽量以直接的方式写代码。中间结果直接在运行需要时计算，而不存储它们。</li>
+<li>在最优化的模式下编译。</li>
+<li>使用任何的分析工具来寻找重要的瓶颈问题。</li>
+<li>检查数据结构来改善局部性。尽量使得数据单元尺寸与目标架构的cache/page大小一致。</li>
+<li>如果分析工具展露出来了数值计算上的瓶颈问题，检查编译器生成的汇编代码（assembly code）。根据问题重写源代码。</li>
+</ol>
+<h2 id="Inverse-Mappings"><a href="#Inverse-Mappings" class="headerlink" title="Inverse Mappings"></a>Inverse Mappings</h2><p>&emsp;&emsp;如果有函数 $f:\boldsymbol A \rightarrow \boldsymbol B$，那么可能存在反函数（inverse function）$f^{-1}:\boldsymbol B \rightarrow \boldsymbol A$，其中定义如$f^{-1}(b)=a$则$b=f(a)$。这一定义只生效于：如果每个$b \in \boldsymbol B$是$f$下的某些点的镜像（image），并且这样的点是只有一个点是满足的（即只有一个$a$满足了$f(a)=b$）。这种映射称为双向映射（<em>bijections</em>）。双向映射的情况为每一个$a \in \boldsymbol A$对应于一个唯一的$b \in \boldsymbol B$，并且对于每个$b \in \boldsymbol B$，有一个明确的$a \in \boldsymbol A$使得满足$f(a)=b$。函数不是双映射的不存在反函数。</p>
+<h2 id="Trigonometry"><a href="#Trigonometry" class="headerlink" title="Trigonometry"></a>Trigonometry</h2><p>atan和atan2的区别：atan的自变量所在域为实数域，映射的因变量的区间为$[-\pi /2,\pi /2]$；atan2的自变量的所在域为在2D实数平面一对有序实数域，映射的因变量区间为$[- \pi ,\pi]$。</p>
+<h3 id="Pythagorean-identities（勾股性质）"><a href="#Pythagorean-identities（勾股性质）" class="headerlink" title="Pythagorean identities（勾股性质）"></a>Pythagorean identities（勾股性质）</h3><p>$sin^2A+cos^2A=1$<br>$sec^2A-tan^2A=1$<br>$csc^2A-cot^2A=1$</p>
+<h3 id="Addition-and-subtraction-identities（加法与减法性质）"><a href="#Addition-and-subtraction-identities（加法与减法性质）" class="headerlink" title="Addition and subtraction identities（加法与减法性质）"></a>Addition and subtraction identities（加法与减法性质）</h3><p>$sin(A+B)=sinAcosB+sinBcosA$<br>$sin(A-B)=sinAcosB-sinBcosA$<br>$sin(2A)=2sinAcosA$<br>$cos(A+B)=cosAcosB-sinAsinB$<br>$cos(A-B)=cosAcosB+sinAsinB$<br>$cos(2A)=cos^2A-sin^2A$</p>
+<p>$tan(A+B)=\displaystyle\frac{tanA+tanB}{1-tanAtanB}$</p>
+<p>$tan(A-B)=\displaystyle\frac{tanA-tanB}{1+tanAtanB}$</p>
+<p>$tan(2A)=\displaystyle\frac{2tanA}{1-tan^2A}$</p>
+<h3 id="Half-angle-indentities（半角性质）"><a href="#Half-angle-indentities（半角性质）" class="headerlink" title="Half-angle indentities（半角性质）"></a>Half-angle indentities（半角性质）</h3><p>$sin^2(A/2)=(1-cosA)/2$<br>$cos^2(A/2)=(1+cosA)/2$</p>
+<h3 id="Product-identities（乘积性质）"><a href="#Product-identities（乘积性质）" class="headerlink" title="Product identities（乘积性质）"></a>Product identities（乘积性质）</h3><p>$sinAsinB=-(cos(A+B)-cos(A-B))/2$<br>$sinAcosB=\quad (sin(A+B)+sin(A-B))/2$<br>$cosAcosB=\quad(cos(A+B)+cos(A-B))/2$</p>
+<p>接下来的性质对于有边长$a$,$b$,和$c$，对应的对角为$A$，$B$，$C$的任意三角形都满足，<br>$\displaystyle\frac{sinA}{a}=\frac{sinB}{b}=\frac{sinC}{c}$ (Law of sines, 正弦定理)<br>$c^2=a^2+b^2-2abcosC$ (Law of cosines, 余弦定理)<br>$\displaystyle\frac{a+b}{a-b}=\frac{tan(\frac{A+B}{2})}{tan(\frac{A-B}{2})}$ (Law of tangents，正切定理)</p>
+<p>三角形面积计算方法：<br>$triangle \ area = \frac{1}{4} \sqrt{(a+b+c)(-a+b+c)(a-b+c)(a+b-c)}$</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/吴恩达——机器学习系列课程-笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/08/16/吴恩达——机器学习系列课程-笔记/" class="post-title-link" itemprop="url">吴恩达——机器学习系列课程 笔记</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-16 15:37:06" itemprop="dateCreated datePublished" datetime="2019-08-16T15:37:06+08:00">2019-08-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/machine-learning/" itemprop="url" rel="index"><span itemprop="name">machine learning</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <p>该笔记为观看视频个人笔记。</p>
+<h2 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h2><p>&emsp;&emsp;监督学习算法是指我们给算法一个数据集，其中包含了正确答案，算法的目的就是给出更多的正确答案。</p>
+<h3 id="分类问题"><a href="#分类问题" class="headerlink" title="分类问题"></a>分类问题</h3><p>&emsp;&emsp;分类问题——设法预测一个离散值输出，0或1；有时可能有两种以上的分类。</p>
+<h2 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h2><p>&emsp;&emsp;数据没有任何标签，数据都具有相同的标签或者没有标签。对于给定的数据集，无监督学习算法可能给定该数据包含的两个不同的簇，可以把这些数据分成两个不同的簇，这就是聚类算法；其中一个应用聚类算法的例子是谷歌新闻。无监督学习在其他领域的应用，有如被用来组织大型的计算机集群，管理大型数据中心（大型计算机集群）；用于社交网络的分析；市场细分中的应用，许多公司拥有庞大的客户信息数据库，但预先并不知道有哪些细分市场；用于天文数据分析，这些聚类算法带来了星系形成理论；这些都是聚类，聚类只是无监督学习的一种。<br><strong>鸡尾酒算法</strong><br>[W,s,v]=svd((repmat(sum(x.<em>x,1),size(x,1),1).</em>x)*x&#39;);<br>svd: 是奇异值分解的缩写</p>
+<h2 id="模型描述"><a href="#模型描述" class="headerlink" title="模型描述"></a>模型描述</h2><h3 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h3><p>&emsp;&emsp;回归是指我们预测一个具体的数值输出。另一种最常见的监督学习问题，被称为分类问题，我们用它来预测离散值输出。一元线性回归模型又称为单变量线性回归模型。</p>
+<h2 id="代价函数"><a href="#代价函数" class="headerlink" title="代价函数"></a>代价函数</h2><p>&emsp;&emsp;代价函数也被称作平方误差函数，有时也被称为平方误差代价函数。事实上，求出误差的平方和的原因，在于误差平方代价函数对于大多数问题，特别是回归问题，都是一个合理的选择。还有其他的代价函数也能很好地发挥作用，但是平方误差代价函数可能是解决回归问题最常用的手段，对于大多数线性回归问题是非常合理的。<br>&emsp;&emsp;当参数只有一个时，代价函数为二维碗状函数；当参数有两个时，代价函数为三维碗状函数；可以将三维碗状函数图转换为等高图。<br>$\displaystyle minimize_{\theta_{0}\theta_{1}}\frac{1}{2m}\sum^{m}_{i=1}(h_\theta(x^{(i)}-y^{(i)}))^2$</p>
+<h2 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h2><p>&emsp;&emsp; repeat until convergence { $ \theta_j = \theta_j -\alpha \frac{\partial}{\partial \theta_j}$}。在matlab中，$:=$是赋值，$=$是判断值是否相等。如果$\alpha$很大，梯度下降就很迅速，反之很小。这个公式的微妙之处在于需要同时更新$\theta_0$和$\theta_1$。在梯度下降法中，当我们接近局部最低点时，梯度下降法会自动采取更小的幅度，这是因为当我们接近局部最低点时，根据定义，在局部最低时导数等于零。所以当我们接近局部最低时，导数值会自动变得越来越小，所以梯度下降将自动采取较小的幅度，这就是梯度下降的运动方式。所以实际上没有必要再另外减小$\alpha$。</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/10/Lattice-Boltzmann-Method/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/08/10/Lattice-Boltzmann-Method/" class="post-title-link" itemprop="url">Lattice Boltzmann Method</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-10 19:32:47" itemprop="dateCreated datePublished" datetime="2019-08-10T19:32:47+08:00">2019-08-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fluid/" itemprop="url" rel="index"><span itemprop="name">Fluid</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h1 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h1><p>&emsp;&emsp;在介观方法中，LB方法逐渐被采用为模拟大范围的非单相流动的一种替代的方法。采用简单的动力学方法来模拟水动力系统的理论基础是基于自然宏观现象的观测，如水动力，对于其潜在的微观动力细节方面是相当不敏感的。在水动力系统下，微观动力的细节可以影响运输系数的数值，但是不影响Navier-Stokes equations 的整体形式。</p>
+<p>&emsp;&emsp;LB方法，因此，是一种离散玻尔兹曼方程（discrete Boltzmann equation）的极小的形式，在极小的Kn数下主要地重构了Navier-Stokes级别的水动力。它是极小的，因为只有一小部分的离散值$v$→$v_i$从速度空间中保留，这些都要求满足守恒定律并且能够复原正确的空间-时间对称性（space-time symmetries）（伽利略，移动和旋转不变性(Galilean, translational and rotational invariance)）。这使得LB方法成为一种间接的N-S求解器。此外，LB方法也可以容纳描述了许多复杂流动现象的粒子间力(inter-particle force)，并且不用必须求解复杂的动力方程或者它们的分子动力。因此，LB方法适合求解包含了表面动力的问题，微粒的/悬浮的流动（particulate/suspension flows），多相流动（multiphase flows），Kn-过渡流动（Kn-transition flows），多孔介质流动（porous media flows）和二元复杂流动（binary complex flows）及三元复杂流动（ternary complex flows）等。值得讨论的是LB方法的多种天性是一种优点，但是同时，关于它的适用性也是一个潜在的困惑来源。</p>
+<h2 id="基于LGCA的方程（LGCA-based-formulation）"><a href="#基于LGCA的方程（LGCA-based-formulation）" class="headerlink" title="基于LGCA的方程（LGCA-based formulation）"></a>基于LGCA的方程（LGCA-based formulation）</h2><p>&emsp;&emsp;LB方法来自于它的前身——格子气细胞自动机（LGCA），尤其是FHP模型，相当独立于动力学理论。LGCA背后的基本思想是在一个微观格子上的伪粒子的微观相互作用可以导致平均宏观方程组。对于相互作用，由粒子伴随着格子速度的碰撞（streaming）和传播（propagation）（或流动 (streaming)）过程组成，格子（离散的）对称性在质量守恒方面起到了一个关键作用，并且保证了角动量守恒。但是，FHP模型具有一些缺点，如统计噪声，缺乏伽利略不变性，低雷诺数要求，三维空间难以拓展等。LB方法便是为了解决LGCA的这些问题而出现的。通过一系列的里程碑式的进步，如布尔变量被实值变量替换，碰撞操作符的线性化等，LBM-BGK（LBGK）模型领域的发展，都成功地解决了LGCA的缺点。值得注意的是原始的LBM方程（由Qian和Chen等人提出）受限于等温低马赫数（近似不可压缩(near-incompressible)）流动，并且不提供一种得到非等温LBM模型的系统性的方法（也需要满足能量守恒）。早期的LB模型，由LGCA推导得出，有时候被认为是LB模型的第一代。</p>
+<center>
+<img src="https://raw.githubusercontent.com/Yihui-Ma/MarkdownImages/master/Lattice%20Boltzmann%20Method/FHP%20model.png" style="zoom:30%">
+<div>
+FHP模型图
+</div>
+</center>
+
+<h2 id="连续性基于玻尔兹曼-BGK的构想-（Continuous-Boltzmann-BGK-based-formulation）"><a href="#连续性基于玻尔兹曼-BGK的构想-（Continuous-Boltzmann-BGK-based-formulation）" class="headerlink" title="连续性基于玻尔兹曼-BGK的构想 （Continuous Boltzmann-BGK based formulation）"></a>连续性基于玻尔兹曼-BGK的构想 （Continuous Boltzmann-BGK based formulation）</h2><p>&emsp;&emsp;基于LGCA的方程并没有一个与玻尔兹曼方程或者气体动力学理论相关的正式联系。与LGCA之间的联系不存在被开创性论文（由Abe，He和Luo）证明了，其中LB方法由（连续）Boltzmann-BGK方程的直接相位-空间离散化所导出。即，LB方法被证明是连续的Boltzmann-BGK方程的一种特殊的有限差分形式。即使生成的方法保持了之前基于LGCA构想（formulation）的结构形式，它在数学形式上是严谨的，（部分地）与动力学理论一致，并且具有更好的稳定性和准确性。更重要的是，这一构想使得LB方法能够通过自适应网格和非笛卡尔坐标网格等，大规模拓展到实际的工程流动问题中。但是，正如基于LGCA的构想，由于在实现推导过程中的小马赫数假设（近似不可压缩），这一构想主要受限于等温（isothermal），低速(low-speed)流动。基于He和Luo的构想的LB模型被称为第二代LB模型。</p>
+<p>以上都引用自：</p>
+<blockquote>
+<p>Kinetically Consistent Thermal Lattice Boltzmann Models  -by Parthib R. Rao, B.Tech, National Institute of Technology, Calicut, India, 2004</p>
+</blockquote>
+<h2 id="Weighted-multiple-relaxation-time-WMRT-model"><a href="#Weighted-multiple-relaxation-time-WMRT-model" class="headerlink" title="Weighted multiple-relaxation-time (WMRT) model"></a>Weighted multiple-relaxation-time (WMRT) model</h2><p>&emsp;&emsp;The MRT-LBE approach is based on projection theory: the advection process of the particle distribution function is carried out in the particle velocity space, whereas the collision process is done in moment space, i.e., the distribution function is projected to its velocity moments during the collision precess.（MRT-LBE方法是基于投影理论的：粒子分布函数的传播过程是在粒子速度空间下实现的，其中碰撞过程是在矩空间实现的，如，碰撞过程中的分布函数投影到速度矩上）。</p>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/10/使用介观方法（Mesoscale-Methods）的原因/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yihui-Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YIHUI">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/08/10/使用介观方法（Mesoscale-Methods）的原因/" class="post-title-link" itemprop="url">使用介观方法（Mesoscale Methods）的原因</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-10 16:30:01" itemprop="dateCreated datePublished" datetime="2019-08-10T16:30:01+08:00">2019-08-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-27 13:52:16" itemprop="dateModified" datetime="2023-07-27T13:52:16+08:00">2023-07-27</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fluid/" itemprop="url" rel="index"><span itemprop="name">Fluid</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h1 id="为什么使用介观方法？（Why-Mesoscale-Methods-）"><a href="#为什么使用介观方法？（Why-Mesoscale-Methods-）" class="headerlink" title="为什么使用介观方法？（Why Mesoscale Methods?）"></a>为什么使用介观方法？（Why Mesoscale Methods?）</h1><p>&emsp;&emsp;基于连续性假设的模型对于大部分流体问题来说已经足够了；但是，许多宏观的流体现象仍然受到其潜在的微观世界的重要影响。表面张力就是一个重要的例子：分子之间的凝聚力在宏观上起到了相位分离的作用，同时还伴随着表面的动力学影响。但是，使用连续性方法来模拟仿真这一现象充满了困难，因为控制方程都是在宏观尺度下的，其中由于基本机制而产生的表面动力学都是在微观尺度下的。在微通道下的气体流动，尤其是在具有墙边界（wall boundaries）（大Kn数流动）的情况下是另一种情况，在这里基于连续性方法是不够的。介观模型技术在这些情况是有用处的，如我们需要模拟宏观流体，但是也需要拓展这之下重要的微观现象。介观方法通过统计力学和动力学理论，提供了微观世界和宏观世界的连接。</p>
+<p>&emsp;&emsp;目前已经发展了许多种介观尺度方法，其中的一些直接地求解了玻尔兹曼方程（Boltzmann equation），如格子玻尔兹曼方法（lattice Boltzmann (LB) method），离散速度方法（discrete velocity method (DVM)），气体动力学方案（gas-kinetic scheme (GKS)）等；并且一些直接模拟了伪粒子，如格子气细胞自动机（Lattice Gas Cellular Automata (LGCA)），耗散粒子动力学（Dissipative Particle Dynamics (DPD)），以及直接模拟蒙特卡罗方法（Direct Simulation Monte Carlo (DSMC) method）。所有的这些方法不像在分子动力学（Molecular Dynamics (MD)）里一样追踪单独的粒子，但是跟踪一组伪粒子（pseudo-particles），统计上地由它们的概率分布函数（Probability Distribution Function (PDF)）表示。</p>
+<p>以上都引用自：</p>
+<blockquote>
+<p>Kinetically Consistent Thermal Lattice Boltzmann Models  -by Parthib R. Rao, B.Tech, National Institute of Technology, Calicut, India, 2004</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yihui-Ma</p>
+  <div class="site-description motion-element" itemprop="description"></div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/Yihui-Ma" title="GitHub &rarr; https://github.com/Yihui-Ma" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+  </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yihui-Ma</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.3.0</div>
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+      </div>
+
+    
+
+  </div>
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+<script src="/js/utils.js?v=7.3.0"></script>
+  <script src="/js/motion.js?v=7.3.0"></script>
+
+
+  <script src="/js/schemes/muse.js?v=7.3.0"></script>
+
+
+<script src="/js/next-boot.js?v=7.3.0"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    
+      <script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', function() {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+  
+
+  
+
+  
+
+
+  
+</body>
+</html>
