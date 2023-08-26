@@ -8,4 +8,4 @@ categories:
 - Unreal Engine
 ---
 
-UMG作为Unreal Engine的UI系统
+UMG作为Unreal Engine的UI系统，具有多种类型组件。
