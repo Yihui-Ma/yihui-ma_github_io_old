@@ -79,7 +79,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Yihui-Ma/yihui-ma.github.io.git
+  repo: git@github.com:Yihui-Ma/yihui-ma.github.io.git
   branch: master
 
 marked:
