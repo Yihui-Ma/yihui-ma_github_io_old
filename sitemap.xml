@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/08/07/%E4%B8%83%E5%A4%95%E8%8A%82%E5%BF%AB%E4%B9%90/</loc>
-    
-    <lastmod>2023-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2019/08/10/%E4%BD%BF%E7%94%A8%E4%BB%8B%E8%A7%82%E6%96%B9%E6%B3%95%EF%BC%88Mesoscale-Methods%EF%BC%89%E7%9A%84%E5%8E%9F%E5%9B%A0/</loc>
     
     <lastmod>2023-07-27</lastmod>
@@ -101,7 +92,43 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%951/</loc>
+    
+    <lastmod>2023-07-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/07/%E4%B8%83%E5%A4%95%E8%8A%82%E5%BF%AB%E4%B9%90/</loc>
+    
+    <lastmod>2023-07-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%952/</loc>
+    
+    <lastmod>2023-07-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%953/</loc>
+    
+    <lastmod>2023-07-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%954/</loc>
     
     <lastmod>2023-07-27</lastmod>
     
@@ -120,33 +147,6 @@
   
   <url>
     <loc>http://yoursite.com/2019/08/29/%E7%BA%BF%E6%80%A7%E5%85%B3%E7%B3%BB%E7%9A%84%E4%B8%80%E4%B8%AA%E7%BB%93%E8%AE%BA/</loc>
-    
-    <lastmod>2023-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%954/</loc>
-    
-    <lastmod>2023-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%951/</loc>
-    
-    <lastmod>2023-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%953/</loc>
     
     <lastmod>2023-07-27</lastmod>
     
@@ -251,14 +251,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>http://yoursite.com/tags/machine-learning/</loc>
     <lastmod>2024-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/machine-learning/</loc>
+    <loc>http://yoursite.com/tags/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2024-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -309,14 +309,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>http://yoursite.com/categories/machine-learning/</loc>
     <lastmod>2024-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/machine-learning/</loc>
+    <loc>http://yoursite.com/categories/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2024-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
