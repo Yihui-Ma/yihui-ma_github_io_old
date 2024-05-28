@@ -67,30 +67,6 @@
   </entry>
   
   <entry>
-    <title>C++ 笔记</title>
-    <link href="http://yoursite.com/2019/09/07/C++-%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2019/09/07/C++-%E7%AC%94%E8%AE%B0/</id>
-    <published>2019-09-07T14:25:26.000Z</published>
-    <updated>2023-07-27T05:52:16.904Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="define-宏定义"><a href="#define-宏定义" class="headerlink" title="#define 宏定义"></a>#define 宏定义</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define value A B</span><br></pre></td></tr></table></figure><p>则将value定义为A和B，value既等于A，又等于B。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;define-宏定义&quot;&gt;&lt;a href=&quot;#define-宏定义&quot; class=&quot;headerlink&quot; title=&quot;#define 宏定义&quot;&gt;&lt;/a&gt;#define 宏定义&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;ta</summary>
-      
-    
-    
-    
-    <category term="Computer Science" scheme="http://yoursite.com/category/Computer-Science/"/>
-    
-    
-    <category term="Computer Science" scheme="http://yoursite.com/tag/Computer-Science/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CUDA 笔记</title>
     <link href="http://yoursite.com/2019/09/04/CUDA-%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2019/09/04/CUDA-%E7%AC%94%E8%AE%B0/</id>
