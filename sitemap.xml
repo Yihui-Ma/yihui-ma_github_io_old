@@ -119,6 +119,15 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/2019/09/04/CUDA-%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2023-07-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/09/07/C++-%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2023-07-27</lastmod>
@@ -129,15 +138,6 @@
   
   <url>
     <loc>http://yoursite.com/2019/08/25/Fundamentals-of-Computer-Graphics-%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2023-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/09/04/CUDA-%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2023-07-27</lastmod>
     
