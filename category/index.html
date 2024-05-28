@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yihui-Ma">
+
+
+
+
+
+<title>category | YIHUI</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="YIHUI" type="application/atom+xml">
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Bentham&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Bentham&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                
+
+
+
+    <div class="container">
+        <div class="post-wrap categories">
+            <h2 class="post-title">-&nbsp;Categories&nbsp;-</h2>
+            <div class="categories-card">
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/Computer-Science/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    Computer Science
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/09/07/C++-%E7%AC%94%E8%AE%B0/">C++ 笔记</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/09/04/CUDA-%E7%AC%94%E8%AE%B0/">CUDA 笔记</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/09/01/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/">深入理解计算机系统 笔记</a>
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/Computer-Graphics/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    Computer Graphics
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/25/Fundamentals-of-Computer-Graphics-%E7%AC%94%E8%AE%B0/">Fundamentals of Computer Graphics 笔记</a>
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/Fluid/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    Fluid
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/09/Liouville-s-theorem-Hamiltonian/">Liouville's theorem(Hamiltonian)</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/10/Lattice-Boltzmann-Method/">Lattice Boltzmann Method</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/10/%E4%BD%BF%E7%94%A8%E4%BB%8B%E8%A7%82%E6%96%B9%E6%B3%95%EF%BC%88Mesoscale-Methods%EF%BC%89%E7%9A%84%E5%8E%9F%E5%9B%A0/">使用介观方法（Mesoscale Methods）的原因</a>
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/Maths/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    Maths
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/08/Nabla%E7%AE%97%E5%AD%90%E2%80%94%E2%80%94%E4%B8%8E%E6%A2%AF%E5%BA%A6%E3%80%81%E6%95%A3%E5%BA%A6%E3%80%81%E6%97%8B%E5%BA%A6%E5%92%8C%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90/">Nabla算子——与梯度、散度、旋度和拉普拉斯算子</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/29/%E7%BA%BF%E6%80%A7%E5%85%B3%E7%B3%BB%E7%9A%84%E4%B8%80%E4%B8%AA%E7%BB%93%E8%AE%BA/">线性关系的一个结论</a>
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/Unreal-Engine/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    Unreal Engine
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2023/08/28/UE-Components/">UE Components</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2023/08/26/UMG%E6%9C%BA%E5%88%B6/">UMG机制</a>
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/%E6%B5%8B%E8%AF%95/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    测试
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/10/16/test-global/">test_global</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2023/08/22/test20230822/">test20230822</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%951/">多终端测试1</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%952/">多终端测试2</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E6%B5%8B%E8%AF%953/">多终端测试3</a>
+                                    </article>
+                                
+                            
+                                
+                                
+                            
+                            
+                                <a class="more-post-link" href="/category/%E6%B5%8B%E8%AF%95/">More >></a>
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/%E6%9D%82%E8%AE%B0/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    杂记
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/07/%E4%B8%83%E5%A4%95%E8%8A%82%E5%BF%AB%E4%B9%90/">七夕节快乐</a>
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+                    
+                    <div class="card-item">
+                        <div class="categories">
+                            <a href="/category/machine-learning/">
+                                <h3>
+                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
+                                    machine learning
+                                </h3>
+                            </a>
+                            
+                                
+                                
+                                    <article class="archive-item">
+                                        <a class="archive-item-link"
+                                           href="/2019/08/16/%E5%90%B4%E6%81%A9%E8%BE%BE%E2%80%94%E2%80%94%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%B3%BB%E5%88%97%E8%AF%BE%E7%A8%8B-%E7%AC%94%E8%AE%B0/">吴恩达——机器学习系列课程 笔记</a>
+                                    </article>
+                                
+                            
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Yihui-Ma | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

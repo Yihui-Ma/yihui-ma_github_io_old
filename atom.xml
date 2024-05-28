@@ -34,10 +34,10 @@
     
     
     
-    <category term="Unreal Engine" scheme="http://yoursite.com/categories/Unreal-Engine/"/>
+    <category term="Unreal Engine" scheme="http://yoursite.com/category/Unreal-Engine/"/>
     
     
-    <category term="Unreal Engine" scheme="http://yoursite.com/tags/Unreal-Engine/"/>
+    <category term="Unreal Engine" scheme="http://yoursite.com/tag/Unreal-Engine/"/>
     
   </entry>
   
@@ -46,7 +46,7 @@
     <link href="http://yoursite.com/2023/08/26/UMG%E6%9C%BA%E5%88%B6/"/>
     <id>http://yoursite.com/2023/08/26/UMG%E6%9C%BA%E5%88%B6/</id>
     <published>2023-08-26T07:36:14.000Z</published>
-    <updated>2023-08-26T07:44:34.910Z</updated>
+    <updated>2024-05-28T07:49:09.693Z</updated>
     
     <content type="html"><![CDATA[<p>UMG作为Unreal Engine的UI系统，具有多种类型组件。</p>]]></content>
     
@@ -59,10 +59,10 @@
     
     
     
-    <category term="Unreal Engine" scheme="http://yoursite.com/categories/Unreal-Engine/"/>
+    <category term="Unreal Engine" scheme="http://yoursite.com/category/Unreal-Engine/"/>
     
     
-    <category term="Unreal Engine" scheme="http://yoursite.com/tags/Unreal-Engine/"/>
+    <category term="Unreal Engine" scheme="http://yoursite.com/tag/Unreal-Engine/"/>
     
   </entry>
   
@@ -84,10 +84,10 @@
     
     
     
-    <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/category/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/tag/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -109,10 +109,10 @@
     
     
     
-    <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/category/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/tag/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -133,10 +133,10 @@
     
     
     
-    <category term="Computer Science" scheme="http://yoursite.com/categories/Computer-Science/"/>
+    <category term="Computer Science" scheme="http://yoursite.com/category/Computer-Science/"/>
     
     
-    <category term="Computer Science" scheme="http://yoursite.com/tags/Computer-Science/"/>
+    <category term="Computer Science" scheme="http://yoursite.com/tag/Computer-Science/"/>
     
   </entry>
   
@@ -157,10 +157,10 @@
     
     
     
-    <category term="Computer Science" scheme="http://yoursite.com/categories/Computer-Science/"/>
+    <category term="Computer Science" scheme="http://yoursite.com/category/Computer-Science/"/>
     
     
-    <category term="Computer Science" scheme="http://yoursite.com/tags/Computer-Science/"/>
+    <category term="Computer Science" scheme="http://yoursite.com/tag/Computer-Science/"/>
     
   </entry>
   
@@ -181,10 +181,10 @@
     
     
     
-    <category term="Computer Science" scheme="http://yoursite.com/categories/Computer-Science/"/>
+    <category term="Computer Science" scheme="http://yoursite.com/category/Computer-Science/"/>
     
     
-    <category term="Computer Science" scheme="http://yoursite.com/tags/Computer-Science/"/>
+    <category term="Computer Science" scheme="http://yoursite.com/tag/Computer-Science/"/>
     
   </entry>
   
@@ -205,10 +205,10 @@
     
     
     
-    <category term="Maths" scheme="http://yoursite.com/categories/Maths/"/>
+    <category term="Maths" scheme="http://yoursite.com/category/Maths/"/>
     
     
-    <category term="Maths" scheme="http://yoursite.com/tags/Maths/"/>
+    <category term="Maths" scheme="http://yoursite.com/tag/Maths/"/>
     
   </entry>
   
@@ -230,10 +230,10 @@
     
     
     
-    <category term="Computer Graphics" scheme="http://yoursite.com/categories/Computer-Graphics/"/>
+    <category term="Computer Graphics" scheme="http://yoursite.com/category/Computer-Graphics/"/>
     
     
-    <category term="Computer Graphics" scheme="http://yoursite.com/tags/Computer-Graphics/"/>
+    <category term="Computer Graphics" scheme="http://yoursite.com/tag/Computer-Graphics/"/>
     
   </entry>
   
@@ -255,10 +255,10 @@
     
     
     
-    <category term="machine learning" scheme="http://yoursite.com/categories/machine-learning/"/>
+    <category term="machine learning" scheme="http://yoursite.com/category/machine-learning/"/>
     
     
-    <category term="machine learning" scheme="http://yoursite.com/tags/machine-learning/"/>
+    <category term="machine learning" scheme="http://yoursite.com/tag/machine-learning/"/>
     
   </entry>
   
@@ -279,10 +279,10 @@
     
     
     
-    <category term="Fluid" scheme="http://yoursite.com/categories/Fluid/"/>
+    <category term="Fluid" scheme="http://yoursite.com/category/Fluid/"/>
     
     
-    <category term="Fluid" scheme="http://yoursite.com/tags/Fluid/"/>
+    <category term="Fluid" scheme="http://yoursite.com/tag/Fluid/"/>
     
   </entry>
   
@@ -303,10 +303,10 @@
     
     
     
-    <category term="Fluid" scheme="http://yoursite.com/categories/Fluid/"/>
+    <category term="Fluid" scheme="http://yoursite.com/category/Fluid/"/>
     
     
-    <category term="Fluid" scheme="http://yoursite.com/tags/Fluid/"/>
+    <category term="Fluid" scheme="http://yoursite.com/tag/Fluid/"/>
     
   </entry>
   
@@ -331,10 +331,10 @@
     
     
     
-    <category term="Fluid" scheme="http://yoursite.com/categories/Fluid/"/>
+    <category term="Fluid" scheme="http://yoursite.com/category/Fluid/"/>
     
     
-    <category term="Fluid" scheme="http://yoursite.com/tags/Fluid/"/>
+    <category term="Fluid" scheme="http://yoursite.com/tag/Fluid/"/>
     
   </entry>
   
@@ -355,10 +355,10 @@
     
     
     
-    <category term="Maths" scheme="http://yoursite.com/categories/Maths/"/>
+    <category term="Maths" scheme="http://yoursite.com/category/Maths/"/>
     
     
-    <category term="Maths" scheme="http://yoursite.com/tags/Maths/"/>
+    <category term="Maths" scheme="http://yoursite.com/tag/Maths/"/>
     
   </entry>
   
@@ -380,10 +380,10 @@
     
     
     
-    <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/category/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/tag/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -405,10 +405,10 @@
     
     
     
-    <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/category/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/tag/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -430,10 +430,10 @@
     
     
     
-    <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/category/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/tag/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -455,10 +455,10 @@
     
     
     
-    <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/category/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://yoursite.com/tag/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -481,10 +481,10 @@
     
     
     
-    <category term="杂记" scheme="http://yoursite.com/categories/%E6%9D%82%E8%AE%B0/"/>
+    <category term="杂记" scheme="http://yoursite.com/category/%E6%9D%82%E8%AE%B0/"/>
     
     
-    <category term="杂记" scheme="http://yoursite.com/tags/%E6%9D%82%E8%AE%B0/"/>
+    <category term="杂记" scheme="http://yoursite.com/tag/%E6%9D%82%E8%AE%B0/"/>
     
   </entry>
   
